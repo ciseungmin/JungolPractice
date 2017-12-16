@@ -151,6 +151,7 @@
 					document.getElementById('result529-1').innerHTML = Obe;
 				} else {
 					document.getElementById('result529-1').innerHTML = "";
+					//else는 앞서 있는 if의 반대되는 상황일때를 가정한다.
 				}
 		}
 
@@ -158,7 +159,37 @@
 	</script>
 
 <hr/><!--문제구분 하는 hr태그 -->
+	<h3>532 : 선택제어문 - 자가진단5</h3><br/>
+	<h5>두 개의 실수를 입력받아 모두 4.0 이상이면 "A", 모두 3.0 이상이면 "B", 아니면 "C" 라고 출력하는 프로그램을 작성하시오.</h5>
 
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+
+	<!-- 입력부-->
+	<input type="text" id="NMB-1">
+	<input type="text" id="NMB-2">
+	<button onclick="solve532();">입력</button>
+
+	<!--출력부-->
+	<p id="result532"></p>
+
+<script>
+		//javaScript 작성
+		function solve532(){
+			var A = document.getElementById('NMB-1').value;
+			var B = document.getElementById('NMB-2').value;
+
+				if (A >= 4.0 && B >= 4.0) {
+					document.getElementById('result532').innerHTML = "A";
+				} else if (A >= 3.0 && B >= 3.0) {
+					document.getElementById('result532').innerHTML = "B";
+				} else {
+					document.getElementById('result532').innerHTML = "C";
+				}
+				//&& - and, || - or 
+		}
+</script>
 
 
 </body>
