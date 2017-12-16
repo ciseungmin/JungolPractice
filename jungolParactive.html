@@ -187,7 +187,39 @@
 				} else {
 					document.getElementById('result532').innerHTML = "C";
 				}
-				//&& - and, || - or 
+				//&& - and, || - or, ! - not 
+				//ex) if(조건1 && 조건2) if(!(조건1 && 조건2))
+		}
+</script>
+
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>530 : 선택제어문 - 자가진단3</h3><br/>
+	<h5>나이를 입력받아 20살 이상이면 "adult"라고 출력하고 그렇지 않으면 몇 년후에 성인이 되는지를 "○ years later"라는 메시지를 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="AdultAge">
+	<button onclick="solve530();">입력</button>
+
+	<!--출력부-->
+	<p id="result530"></p>
+
+<script>
+		//javaScript 작성
+		function solve530(){
+			var adu = document.getElementById('AdultAge').value;
+			var aduage = 20 - Number(adu);
+
+			console.log('AdultAge' + AdultAge)
+
+			if (adu >= 20) {
+				document.getElementById('result530').innerHTML = "adult";
+			} if (adu < 20) {
+				document.getElementById('result530').innerHTML = aduage +"years later";
+			}
+
 		}
 </script>
 
