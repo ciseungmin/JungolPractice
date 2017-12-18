@@ -344,11 +344,48 @@
 
 </script>
 
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>531 : 선택제어문 - 자가진단4</h3><br/>
+	<h5>복싱체급은 몸무게가 
+		50.80kg 이하를 Flyweight 
+		61.23kg 이하를 Lightweight, 
+		72.57kg 이하를 Middleweight, 
+		88.45kg 이하를 Cruiserweight, 
+		88.45kg 초과를 Heavyweight라고 하자.
+	몸무게를 입력받아 체급을 출력하는 프로그램을 작성하시오.</h5>
 
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
 
+	<!--입력부-->
+	<input type="text" id="WeightClass">
+	<button onclick="solve531();">입력</button>
 
+	<!--출력부-->
+	<p id="result531"></p>
 
+<script>
+		//javaScrip작성
+		function solve531(){
+			var Kg = document.getElementById('WeightClass').value;
 
+			console.log('WeightClass' + WeightClass)
+
+			if (Kg <= 50.80 && Kg > 0) {
+				document.getElementById('result531').innerHTML = "Flyweight";
+			} else if (Kg <= 61.23 && Kg > 50.80) {
+				document.getElementById('result531').innerHTML = "Lightweight";
+			} else if (Kg <= 72.57 && Kg > 61.23) {
+				document.getElementById('result531').innerHTML = "Middleweight";
+			} else if (Kg <= 88.45 && Kg > 72.57) {
+				document.getElementById('result531').innerHTML = "Cruiserweight";
+			} else if (Kg > 88.45) {
+				document.getElementById('result531').innerHTML = "Heavyweight";
+			} else {
+				document.getElementById('result531').innerHTML = "Error";
+			}
+		}
+</script>
 
 
 </body>
