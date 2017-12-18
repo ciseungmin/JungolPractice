@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>일일 과제</title>
+</head>
+<body>
+	<h3>501 : 출력 - 자가진단1</h3><br/>
+	<h5>아래 "출력예"와 같이 출력되는 프로그램을 작성하라.</h5>
+	<h3> 출력 예</h3>
+	<h2>Fun Programming!</h2>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<button onclick="solve501();">출력</button>
+	<p id="result501"></p>
+
+	<script>
+		function solve501(){
+			document.getElementById('result501').innerHTML = "Fun Programming!";
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>502 : 출력 - 자가진단2</h3><br/>
+	<h5>다음과 같이 출력되는 프로그램을 작성하라.</h5>
+	<h3> 출력 예</h3>
+	<h2>Programming! It's fun.</h2>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<button onclick="solve502();">출력</button>
+	<p id="result502"></p>
+
+	<script>
+		function solve502(){
+			var text = "Programming! It's fun.";
+
+			document.getElementById('result502').innerHTML = text;
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>503 : 출력 - 자가진단3</h3><br/>
+	<h5>아래와 같이 출력되는 프로그램을 작성하라.</h5>
+	<h3> 출력 예</h3>
+	<h2>My name is Hong Gil Dong.
+		I am 13 years old.</h2>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<button onclick="solve503();">출력</button>
+	<p id="result503-1"></p>
+	<p id="result503-2"></p>
+
+	<script>
+		function solve503(){
+			document.getElementById('result503-1').innerHTML = "My name is Hong Gil Dong.";
+			document.getElementById('result503-2').innerHTML = "I am 13 years old.";
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>504 : 출력 - 자가진단4</h3><br/>
+	<h5>다음과 같이 출력되는 프로그램을 작성하라.</h5>
+	<h3> 출력 예</h3>
+	<h2>(@) (@)</h2>
+	<h2>(=^.^=)</h2>
+	<h2>(-m-m-)</h2>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<button onclick="solve504();">출력</button>
+	<p id="result504-1"></p>
+	<p id="result504-2"></p>
+	<p id="result504-3"></p>
+
+	<script>
+		function solve504(){
+			document.getElementById('result504-1').innerHTML = "(@) (@)";
+			document.getElementById('result504-2').innerHTML = "(=^.^=)";
+			document.getElementById('result504-3').innerHTML = "(-m-m-)";
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>518 : 연산자 - 자가진단1</h3><br/>
+	<h5>세 개의 정수를 입력 받아서 합계와 평균을 출력하시오. (단 평균은 소수 이하를 버리고 정수부분만 출력한다.)</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+	
+	<input type="text" id="numberone">
+	<input type="text" id="numbertwo">
+	<input type="text" id="numberthree">
+
+	<button onclick="solve518();">출력</button>
+	<p id="result518-1"></p>
+	<p id="result518-2"></p>
+
+	<script>
+		function solve518(){
+			var num1 = document.getElementById('numberone').value;
+			var num2 = document.getElementById('numbertwo').value;
+			var num3 = document.getElementById('numberthree').value;
+
+			var Sum = Number(num1) + Number(num2) + Number(num3);
+			var Average = Number(Sum) / 3;
+
+
+			document.getElementById('result518-1').innerHTML = "Sum :" + Sum;
+			document.getElementById('result518-2').innerHTML = "Average :" + Average;
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>519 : 연산자 - 자가진단2</h3><br/>
+	<h5>정수 2개를 입력받아서 첫 번째 수에는 100을 증가시켜 저장하고  두 번째 수는 10으로 나눈 나머지를 저장한 후  두 수를 차례로 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+	
+	<input type="text" id="name519-1">
+	<input type="text" id="name519-2">
+
+	<button onclick="solve519();">출력</button>
+	<p id="result519-1"></p>
+	<p id="result519-2"></p>
+
+	<script>
+		function solve519(){
+			var xNum = document.getElementById('name519-1').value;
+			var yNum = document.getElementById('name519-2').value;
+
+			var Plus = Number(xNum) + 100;
+			var NumVer = Number(yNum) / 10;
+
+			document.getElementById('result519-1').innerHTML = Plus;
+			document.getElementById('result519-2').innerHTML = NumVer;
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>520 : 연산자 - 자가진단3</h3><br/>
+	<h5>한 개의 정수를 입력 받아서 후치증가 연산자를 사용하여 출력한 후 전치 증가 연산자를 사용하여 출력하는프로그램을 작성하시오.</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+
+	<!--입력부-->
+	<input type="text" id="name520">
+
+
+	<!--출력부-->
+	<button onclick="solve520();">출력</button>
+	<p id="result520-1"></p>
+	<p id="result520-2"></p>
+
+
+	<script>
+		function solve520(){
+			var num4 = document.getElementById('name520').value;
+
+		}
+	</script>
+
+
+</body>
+</html>
