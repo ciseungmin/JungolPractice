@@ -223,6 +223,90 @@
 		}
 </script>
 
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>534 : 선택제어문 - 자가진단7</h3><br/>
+	<h5>영문 대문자를 입력받아 
+	'A'이면 “Excellent”, 
+	'B'이면 “Good”, 
+	'C'이면 “Usually”, 
+	'D'이면 “Effort”, 
+	'F'이면 “Failure”, 
+	그 외 문자이면 “error” 라고 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="Grade">
+	<button onclick="solve534();">입력</button>
+
+	<!--출력부-->
+	<p id="result534"></p>
+
+<script>
+		//javaScript 작성
+		function solve534(){
+			var grd = document.getElementById('Grade').value;
+
+			console.log('Grade' + Grade)
+
+			if (grd == "A") {
+				document.getElementById('result534').innerHTML = "Excellent";
+			} else if (grd == "B") {
+				document.getElementById('result534').innerHTML = "Good";
+			} else if (grd == "C") {
+				document.getElementById('result534').innerHTML = "Usually";
+			} else if (grd == "D") {
+				document.getElementById('result534').innerHTML = "Effort";
+			} else if (grd == "F") {
+				document.getElementById('result534').innerHTML = "Failure";
+			} else {
+				document.getElementById('result534').innerHTML = "error";
+			}
+		}
+</script>
+
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>122 : 선택제어문 - 형성평가3</h3><br/>
+	<h5>년도를 입력받아 윤년(leap year)인지 평년(common year)인지 판단하는 프로그램을 작성하시오.</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="년도구분">
+	<button onclick="solve122();">입력</button>
+
+	<!--출력부-->
+	<p id="result122"></p>
+
+<script>
+		//javaScript 작성
+		function solve122(){
+			var Year = document.getElementById('년도구분').value;
+
+			console.log('년도구분'+년도구분)
+
+			if ((Year%4) == 0) {
+				document.getElementById('result122').innerHTML = "윤년 (leap year)";
+			} else if ((Year%100) == 0) {
+				document.getElementById('result122').innerHTML = "윤년 (leap year)";
+			} else if ((Year%400) == 0) {
+				document.getElementById('result122').innerHTML = "윤년 (leap year)";
+			} else {
+				document.getElementById('result122').innerHTML = "평년 (common year)";
+			}
+		}
+</script>	
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
