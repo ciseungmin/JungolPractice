@@ -37,12 +37,12 @@
 	성별 : <input type="text" id="gender"/>
 	나이 : <input type="text" id="age"/>
 
-	<button onclick="solve();">출력</button>
+	<button onclick="solve533();">출력</button>
 	<p id="result533"></p>
 
 	<script>
 		// javaScript 작성
-		function solve(){
+		function solve533(){
 			var gender = document.getElementById('gender').value;
 			var age = document.getElementById('age').value;
 
@@ -50,8 +50,6 @@
 			console.log("age : " + age);
 			// 18 세 이상은 성인으로 구분하기 때문에
 			// 성인 구분 기준을 적는다
-			var adultAge = 18;
-			// 출력 데이터 준비
 			var man = "MAN";
 			var woman = "woman";
 			var boy = "boy";
@@ -200,7 +198,7 @@
 	<!-- ===================== 문제 풀기 ===================== -->
 
 	<!--입력부-->
-	<input type="text" id="AdultAge">
+	<input type="text" id="Adultaverage">
 	<button onclick="solve530();">입력</button>
 
 	<!--출력부-->
@@ -209,15 +207,15 @@
 <script>
 		//javaScript 작성
 		function solve530(){
-			var adu = document.getElementById('AdultAge').value;
-			var aduage = 20 - Number(adu);
+			var adu = document.getElementById('Adultaverage').value;
+			var aduaverage = 20 - Number(adu);
 
-			console.log('AdultAge' + AdultAge)
+			console.log('Adultaverage' + Adultaverage)
 
 			if (adu >= 20) {
 				document.getElementById('result530').innerHTML = "adult";
 			} if (adu < 20) {
-				document.getElementById('result530').innerHTML = aduage +"years later";
+				document.getElementById('result530').innerHTML = aduaverage +"years later";
 			}
 
 		}
