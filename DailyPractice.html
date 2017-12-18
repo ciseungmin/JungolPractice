@@ -153,6 +153,9 @@
 	<h3>520 : 연산자 - 자가진단3</h3><br/>
 	<h5>한 개의 정수를 입력 받아서 후치증가 연산자를 사용하여 출력한 후 전치 증가 연산자를 사용하여 출력하는프로그램을 작성하시오.</h5>
 
+
+
+	<!--일단 보류-->
 	<h2>-------------------------풀이--------------------------</h2>
 	<!-- ===================== 문제 풀기 ===================== -->
 
@@ -175,5 +178,84 @@
 	</script>
 
 
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>528 : 선택제어문 - 자가진단1</h3><br/>
+	<h5>정수를 입력받아 첫 줄에 입력 받은 숫자를 출력하고 둘째 줄에 음수이면 “minus” 라고 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+
+	<!--입력부-->
+	<input type="text" id="name528">
+
+
+	<!--출력부-->
+	<button onclick="solve528();">출력</button>
+	<p id="result528-1"></p>
+	<p id="result528-2"></p>
+
+	<script>
+		function solve528(){
+			
+			//정수 음수 기준
+			var x = 0;
+
+			var i = document.getElementById('name528').value;
+
+			var min = "Minus";
+
+			if (i >= 0) {
+				document.getElementById('result528-1').innerHTML = i;
+			} 
+			if (i < 0) {
+				document.getElementById('result528-1').innerHTML = i;
+			}
+			if (i < 0) {
+				document.getElementById('result528-2').innerHTML = min;
+			}
+		}
+	</script>
+
+
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>529 : 선택제어문 - 자가진단2</h3><br/>
+	<h5>“몸무게+100-키”를 비만수치 공식이라고 하자.
+	키와 몸무게를 자연수로 입력받아 첫 번째 줄에 비만수치를 출력하고, 비만수치가 0보다 크면 다음줄에 비만("Obesity")이라는 메시지를 출력하는 프로그램을 작성하시오. (출력형식은 아래 출력 예를 참고하세요.)</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+
+	<!--입력부-->
+	<input type="text" id="name529-1">
+	<input type="text" id="name529-2">
+
+	<!--출력부-->
+	<button onclick="solve529();">출력</button>
+	<p id="result529-1"></p>
+	<p id="result529-2"></p>
+
+	<script>
+		function solve529(){
+			var cm = document.getElementById('name529-1').value;
+			var kg = document.getElementById('name529-2').value;
+
+			var bmi = Number(kg) + 100 - Number(cm);
+			document.getElementById('result529-1').innerHTML = bmi;
+
+			var Aver = 0;
+
+			var Obe = "Obestiy";
+
+			if (bmi > 0) {
+				document.getElementById('result529-2').innerHTML = Obe;
+			} else if (bmi <= 0) {
+				document.getElementById('result529-2').innerHTML = "";
+			}
+
+
+		}
+	</script>
 </body>
 </html>
