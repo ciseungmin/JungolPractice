@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>일일 과제</title>
+	<title>일일 과제1</title>
 </head>
 <body>
 	<h3>501 : 출력 - 자가진단1</h3><br/>
@@ -253,8 +253,35 @@
 			} else if (bmi <= 0) {
 				document.getElementById('result529-2').innerHTML = "";
 			}
+		}
+	</script>
 
 
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>530 : 선택제어문 - 자가진단3</h3><br/>
+	<h5>나이를 입력받아 20살 이상이면 "adult"라고 출력하고 그렇지 않으면 몇 년후에 성인이 되는지를 "○ years later"라는 메시지를 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>-------------------------풀이--------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="name530">
+
+	<!--출력부-->
+	<button onclick="solve530();">출력</button>
+	<p id="result530"></p>
+
+	<script>
+		function solve530(){
+			var A = document.getElementById('name530').value;
+
+			var AdultAge = 20;
+
+			if (A >= 20) {
+				document.getElementById('result530').innerHTML = "adult";
+			} else {
+				document.getElementById('result530').innerHTML = 20 - Number(A) + "years later";
+			}
 		}
 	</script>
 </body>
