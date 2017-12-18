@@ -274,7 +274,7 @@
 	<!-- ===================== 문제 풀기 ===================== -->
 
 	<!--입력부-->
-	<input type="text" id="년도구분">
+	<input type="text" id="Annual">
 	<button onclick="solve122();">입력</button>
 
 	<!--출력부-->
@@ -283,9 +283,9 @@
 <script>
 		//javaScript 작성
 		function solve122(){
-			var Year = document.getElementById('년도구분').value;
+			var Year = document.getElementById('Annual').value;
 
-			console.log('년도구분'+년도구분)
+			console.log('Annual'+Annual)
 
 			if ((Year%4) == 0) {
 				document.getElementById('result122').innerHTML = "윤년 (leap year)";
@@ -299,7 +299,50 @@
 		}
 </script>	
 
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>535 : 선택제어문 - 자가진단8</h3><br/>
+	<h5>4.5 이하의 평점을 입력받아 그 값에 따라 다음과 같이 출력하는 프로그램을 작성하시오.
+	(C, C++, Java는 switch ~ case문 사용) (Python은 if ~ else사용)
+	단 입력는 0이상 4.5 이하이다.
 
+	4.0 이상 : "scholarship"
+	3.0 이상 : "next semester"
+	2.0 이상 : "seasonal semester"
+	2.0 미만 : "retake"​
+ 
+	>> 실수를 정수형(int)으로 변환하여 분기한다. (예 - switch( (int)score ))</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="gradeship">
+	<button onclick="solve535();">입력</button>
+
+	<!--출력부-->
+	<p id="result535"></p>
+
+<script>
+		//javaScrip작성
+		function solve535(){
+			var score = document.getElementById('gradeship').value; 
+
+			console.log('gradeship' + gradeship)
+
+			if (score >= 4.0 && score <= 4.5) {
+				document.getElementById('result535').innerHTML = "schoolarship";
+			} else if (score >= 3.0 && score < 4.0) {
+				document.getElementById('result535').innerHTML = "next semester";
+			} else if (score >= 2.0 && score <3.0) {
+				document.getElementById('result535').innerHTML = "seasonal semester";
+			} else if (score < 2.0 && score >= 0) {
+				document.getElementById('result535').innerHTML = "retake";
+			} else {
+				document.getElementById('result535').innerHTML = "error";
+			}
+		}
+
+</script>
 
 
 
