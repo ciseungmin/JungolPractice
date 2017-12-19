@@ -386,6 +386,32 @@
 </script>
 
 
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>544 : 반복제어문2 - 자가진단4</h3><br/>
+	<h5>100 이하의 정수를 입력받아서 입력받은 정수부터 100까지의 합을 출력하는 프로그램을 작성하시오.</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="numberPlus">
+	<button onclick="solve544();">입력</button>
+
+	<!--출력부-->
+	<p id="result544"></p>
+
+	<script>
+		function solve544(){
+
+			var sum = document.getElementById('numberPlus').value;
+
+				for(var i = 1; i <= 100; i++){ 
+					sum = Number(sum) + 1;
+					document.getElementById('result544').value;
+				}	 
+		}
+	</script>
+
 </body>
 </html>
 
