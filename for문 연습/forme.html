@@ -4,26 +4,32 @@
 	<title></title>
 </head>
 <body>
-	<hr/><!--문제구분 하는 hr태그 -->
-	<h3>디버깅 연습</h3><br/>
-	<h5></h5>
 
-	<h2>풀이 -------------------------------------------------</h2>
-	<!-- ===================== 문제 풀기 ===================== -->
 
-	<!--입력부-->
-	<h1>for문 디버깅 연습</h1>
-    Number : <input type="text" id="input"/></p>
-    <button onclick="solve534()">입력</button>
+	<button onclick="input();">입 력</button>
+	<p id="output"></p>
+	<script>
+	function.input(){
+			var celebs = [{firstName : "John",lastName : "Doe", age : 46},
+             {firstName : "Jaehun", lastName : "Jeong", age : 30},
+             {firstName : "SY", lastName : "Han", age : 25},
+             {firstName : "Trunbo", lastName : "Dalton", age : 70},
+             {firstName : "GyeSang", lastName : "Yoon", age : 33},
+             {firstName : "Sumi", lastName : "Kim", age : 65},
+             {firstName : "James", lastName : "HatField", age : 50},
+             {firstName : "Ian", lastName : "Soap", age : 31},
+             {firstName : "ByungHun", lastName : "Lee", age : 45},
+             {firstName : "Bruce", lastName : "Lee", age : 29}];
 
-    <script>
-        // javaScript 작성
-        function solve534(){
-        	var sum = 0;
-           for(var i = 1; 1<= 100; i++){
-           		sum = sum + 1;
-           }
-    </script>
+        var x = {firstName : "Odagiri", lastName : "Joe", age : 31} ,{firstName : "Izume", lastName : "Sakai", age : 40};
+
+        
+        for (var i = 0; i < celebs.length;i++){
+        	 document.getElementById('output').innerHTML = celebs[i].firstName + celebs[i].lastName + celebs[i].age + x;
+        }
+    }
+</script>
+
 
 </body>
 </html>
