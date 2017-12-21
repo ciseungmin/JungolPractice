@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JungolPractice</title>
+</head>
+<body>
+
+<hr/><!--문제구분 하는 hr태그 -->
+	<h3>545 : 반복제어문2 - 자가진단5</h3><br/>
+    <h5>10개의 정수를 입력받아 3의 배수의 개수와 5의 배수의 개수를 각각 출력하는 프로그램을 작성하시오.</h5>
+
+
+    <h2>풀이 -------------------------------------------------</h2>
+    <!-- 문제 풀기 -->
+
+    <!--입력부-->
+    Number01 : <input type="text" id="inputNum01">
+    <br>
+    Number02 : <input type="text" id="inputNum02">
+    <br>
+    Number03 : <input type="text" id="inputNum03">
+    <br>
+    Number04 : <input type="text" id="inputNum04">
+    <br>
+    Number05 : <input type="text" id="inputNum05">
+    <br>
+    Number06 : <input type="text" id="inputNum06">
+    <br>
+    Number07 : <input type="text" id="inputNum07">
+    <br>
+    Number08 : <input type="text" id="inputNum08">
+    <br>
+    Number09 : <input type="text" id="inputNum09">
+    <br>
+    Number10 : <input type="text" id="inputNum10">
+    <br>
+    <button onclick="solve545()">입력</button>
+    <br>
+
+    <!--출력부-->
+    Multiples of 3 : <p id="result545-1"></p>
+    Multiples of 5 : <p id="result545-2"></p>
+
+    <script>
+    	//javaScript 작성
+    	function solve545(){
+    		var input01 = document.getElementById('inputNum01').value;
+    		var input02 = document.getElementById('inputNum02').value;
+    		var input03 = document.getElementById('inputNum03').value;
+    		var input04 = document.getElementById('inputNum04').value;
+    		var input05 = document.getElementById('inputNum05').value;
+    		var input06 = document.getElementById('inputNum06').value;
+    		var input07 = document.getElementById('inputNum07').value;
+    		var input08 = document.getElementById('inputNum08').value;
+    		var input09 = document.getElementById('inputNum09').value;
+    		var input10 = document.getElementById('inputNum10').value;
+
+    		var inputs = [input01, input02, input03, input04, input05, input06, input07, input08, input09, input10];
+    		var count3 = 0;
+    		var count5 = 0;
+    		
+    		for(var i = 0; i <= inputs.length; i++){
+    			if(inputs[i]%3 == 0){
+    				count3 += 1;
+    			} 
+    		}
+
+    		document.getElementById('result545-1').innerHTML = count3;
+
+    		for(var i = 0; i <= inputs.length; i++){
+    			if (inputs[i]%5 == 0) {
+    				count5 += 1;	
+    			} 
+    		}	
+    		document.getElementById('result545-2').innerHTML = count5;
+    }
+    </script>
+
+</body>
+</html>

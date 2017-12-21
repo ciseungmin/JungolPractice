@@ -405,18 +405,16 @@
 
 			var sum = document.getElementById('numberPlus').value;
 			
-			var count = 0;
 
+				if (sum > 100) {
+					document.getElementById('result544').innerHTML = "error";}
 
-				for(var i = 0; i <= 100; i++){
-					if (sum <= 100) {
-						count = sum[i] +  ;
-					} else{
-						document.getElementById('result544').innerHTML = "error";
-					}
-					
-				} document.getElementById('result544').innerHTML = count;
-			}
+				for(var i = sum; i <= 100; i++){ 
+				 
+					sum = Number(sum) + i;}
+				
+				document.getElementById('result544').innerHTML = sum;
+		}
 	</script>
 
 <hr/><!--문제구분 하는 hr태그 -->
